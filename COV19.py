@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from SEEIIR import *
 from ODEsolver import *
 
+# Simulate spread of virus in society, plot results.
 def COV19(beta=0.5, r_ia=0.1, r_e2=1.25, lmbda_1=0.33, lmbda_2=1, p_a=0, mu=0.2, d=0.5):
     seeiir = SEEIIR(beta, r_ia, r_e2, lmbda_1, lmbda_2, p_a, mu, d)
     solver = Midpoint(seeiir)
